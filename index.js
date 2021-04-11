@@ -10,12 +10,12 @@ function newTask(title, description) {
     title,
     description,
     complete: false,
-    logState: function () {
+    logState() {
       console.log(
         `${task.title} has${task.complete ? " " : " not "}been completed`
       );
     },
-    markCompleted: function () {
+    markCompleted() {
       this.complete = true;
     }
   };
